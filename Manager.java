@@ -1,15 +1,19 @@
 public class Manager extends Employee {
 
-    int teamsize;
+   private int teamsize;
+    public int getTeamsize() {
+    return teamsize;
+}
+   public void setTeamsize(int teamsize) {
+    this.teamsize = teamsize;
+   }
     public Manager(String name ,int id,double salary,int teamsize){
         super(name,id,salary);
         this.teamsize=teamsize;
 
     }
      public void displayDetails(){
-        System.out.println(name);
-        System.out.println(employeeId);
-         System.out.println(salaray);
+        super.displayDetails();
          System.out.println(teamsize);
     }
 

@@ -1,18 +1,27 @@
 public class Developer extends Employee {
-   String programmingLanguage;
+ private  String programmingLanguage;
+
+
+ 
 
    public Developer(String name, int employeeId, double salaray, String programmingLanguage) {
     super(name, employeeId, salaray);
     this.programmingLanguage = programmingLanguage;
    }
+      public String getProgrammingLanguage() {
+    return programmingLanguage;
+   }
 
+   public void setProgrammingLanguage(String programmingLanguage) {
+    this.programmingLanguage = programmingLanguage;
+   }
+   
    @Override
     public void displayDetails(){
-        System.out.println(name);
-        System.out.println(employeeId);
-         System.out.println(salaray);
+            super.displayDetails();
          System.out.println(programmingLanguage);
     }
-   
+
+
 
 }
